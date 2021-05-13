@@ -3,13 +3,14 @@ customElements.define('my-paragraph',
     constructor() {
       super();
       // Create a shadow root
-      this.attachShadow({mode: 'open'})
+      this.attachShadow({mode: 'open'});
 
-      //const template = document.getElementById('my-paragraph');
       const paragraph = document.createElement('p');
+
       ['Hello', 'World'].map(str => {
         paragraph.appendChild(document.createTextNode(str))
-      })
+      });
+
       // Create some CSS to apply to the shadow dom
       const style = document.createElement('style');
       style.textContent = `
