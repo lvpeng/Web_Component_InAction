@@ -1,0 +1,1 @@
+* CSS defined inside shadow DOM is scoped to it.
